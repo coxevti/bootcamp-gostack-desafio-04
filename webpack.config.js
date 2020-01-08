@@ -28,6 +28,23 @@ module.exports = {
                         loader: 'css-loader'
                     }
                 ]
+            },
+            {
+                test: /.*\.(gif|png|jpe?g)$/i,
+                use: [{
+                    loader: 'file-loader'
+                }]
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'svg-url-loader',
+                        options: {
+                            limit: 10000,
+                        }
+                    }
+                ]
             }
         ]
     }

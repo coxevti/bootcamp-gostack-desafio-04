@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Header from './components/Header';
+
 function App(){
-    return <h2>Helllo</h2>
+    return (
+        <>
+        <Header/>
+        </>
+    );
 }
 
 export default App;
