@@ -9,12 +9,12 @@
     margin: 10px 0;
     border-radius: 4px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    padding: 20px;
     font-family: 'Roboto', sans-serif;    
     color: #979797;
 }
 
-.containerPost p {
+.containerPost > p {
     padding: 20px 0 25px 0;
     border-bottom: 1px solid #F2F2F2;
 }

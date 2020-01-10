@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Post.css";
 
+import Comment from './Comment';
+
 function Post({ data }) {
   return (
     <div className="containerPost">
@@ -13,6 +15,7 @@ function Post({ data }) {
         </div>
       </div>
       <p>{data.content}</p>
+      {data.comments.map(comment => <Comment key={comment.id} data={comment}/>)}
     </div>
   );
 }
